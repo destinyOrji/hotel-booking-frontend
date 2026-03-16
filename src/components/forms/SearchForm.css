@@ -1,0 +1,40 @@
+.search-form {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.search-form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-form-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .search-form-actions {
+    flex-direction: column;
+  }
+
+  .search-form-actions button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .search-form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

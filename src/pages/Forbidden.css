@@ -1,0 +1,78 @@
+.forbidden-page {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.forbidden-content {
+  background: white;
+  border-radius: 12px;
+  padding: 4rem 3rem;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.forbidden-icon {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.forbidden-title {
+  font-size: 6rem;
+  font-weight: 700;
+  color: var(--color-danger, #dc2626);
+  margin: 0;
+  line-height: 1;
+}
+
+.forbidden-subtitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-gray-900, #111827);
+  margin: 1rem 0;
+}
+
+.forbidden-message {
+  font-size: 1.125rem;
+  color: var(--color-gray-600, #4b5563);
+  line-height: 1.6;
+  margin: 0 0 2.5rem 0;
+}
+
+.forbidden-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .forbidden-content {
+    padding: 3rem 2rem;
+  }
+
+  .forbidden-title {
+    font-size: 4rem;
+  }
+
+  .forbidden-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .forbidden-message {
+    font-size: 1rem;
+  }
+
+  .forbidden-actions {
+    flex-direction: column;
+  }
+
+  .forbidden-actions .btn {
+    width: 100%;
+  }
+}

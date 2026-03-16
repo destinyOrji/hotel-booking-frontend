@@ -1,0 +1,73 @@
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.input-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-primary, #1f2937);
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 1px solid var(--color-border, #d1d5db);
+  border-radius: 6px;
+  background-color: white;
+  transition: all 0.2s ease;
+  min-height: 44px;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--color-primary, #2563eb);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.input-field:disabled {
+  background-color: var(--color-gray-100, #f3f4f6);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.input-field.input-error {
+  border-color: var(--color-danger, #dc2626);
+}
+
+.input-field.input-error:focus {
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+}
+
+.input-error-message {
+  font-size: 0.875rem;
+  color: var(--color-danger, #dc2626);
+}
+
+textarea.input-field {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .input-field {
+    padding: 0.875rem 1rem;
+    font-size: 16px; /* Prevents zoom on iOS */
+    min-height: 48px;
+  }
+
+  .input-label {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .input-group {
+    margin-bottom: 0.875rem;
+  }
+}

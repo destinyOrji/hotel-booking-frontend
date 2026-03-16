@@ -1,0 +1,118 @@
+.booking-timeline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+}
+
+.timeline-step {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.timeline-step-indicator {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--gray-200, #e5e7eb);
+  border: 2px solid var(--gray-300, #d1d5db);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: var(--text-secondary, #666);
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+.timeline-step.active .timeline-step-indicator {
+  background: var(--primary-color, #007bff);
+  border-color: var(--primary-color, #007bff);
+  color: white;
+}
+
+.timeline-step.completed .timeline-step-indicator {
+  background: var(--success-color, #28a745);
+  border-color: var(--success-color, #28a745);
+  color: white;
+}
+
+.step-number {
+  font-size: 1rem;
+}
+
+.step-check {
+  font-size: 1.25rem;
+}
+
+.timeline-step-label {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary, #666);
+}
+
+.timeline-step.active .timeline-step-label {
+  color: var(--primary-color, #007bff);
+  font-weight: 600;
+}
+
+.timeline-step.completed .timeline-step-label {
+  color: var(--success-color, #28a745);
+}
+
+.timeline-connector {
+  width: 100px;
+  height: 2px;
+  background: var(--gray-300, #d1d5db);
+  margin: 0 0.5rem;
+  transition: background 0.3s;
+}
+
+.timeline-step.completed .timeline-connector {
+  background: var(--success-color, #28a745);
+}
+
+@media (max-width: 768px) {
+  .booking-timeline {
+    padding: 1.5rem 0;
+  }
+
+  .timeline-step-indicator {
+    width: 32px;
+    height: 32px;
+  }
+
+  .step-number {
+    font-size: 0.875rem;
+  }
+
+  .step-check {
+    font-size: 1rem;
+  }
+
+  .timeline-connector {
+    width: 60px;
+  }
+
+  .timeline-step-label {
+    font-size: 0.75rem;
+    top: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-connector {
+    width: 40px;
+  }
+
+  .timeline-step-label {
+    font-size: 0.7rem;
+  }
+}

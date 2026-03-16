@@ -1,0 +1,25 @@
+.chart-widget {
+  padding: 1rem 0;
+}
+
+.chart-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.chart-error {
+  padding: 2rem;
+  text-align: center;
+  color: var(--error-color);
+  font-size: 0.95rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .chart-widget {
+    padding: 0.5rem 0;
+  }
+}
