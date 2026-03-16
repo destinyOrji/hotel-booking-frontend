@@ -120,6 +120,12 @@ const Login = () => {
             Sign up
           </Link>
         </p>
+        <p>
+          Admin?{' '}
+          <Link to="/register-admin" className="auth-link-primary">
+            Admin registration
+          </Link>
+        </p>
       </div>
     </AuthLayout>
   );

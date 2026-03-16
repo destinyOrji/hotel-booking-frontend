@@ -29,6 +29,7 @@ const CancellationPolicy = lazy(() => import('./pages/CancellationPolicy'))
 // Lazy load auth pages
 const PasswordRecovery = lazy(() => import('./pages/auth/PasswordRecovery'))
 const PasswordReset = lazy(() => import('./pages/auth/PasswordReset'))
+const AdminRegister = lazy(() => import('./pages/auth/AdminRegister'))
 
 // Lazy load admin pages (separate chunk)
 const Dashboard = lazy(() => import('./pages/admin/Dashboard'))
@@ -81,6 +82,7 @@ function AppRoutes() {
         {/* Auth pages without layout */}
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/register-admin" element={<AdminRegister />} />
         <Route path="/forgot-password" element={<PasswordRecovery />} />
         <Route path="/reset-password" element={<PasswordReset />} />
         

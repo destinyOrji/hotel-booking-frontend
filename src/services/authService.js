@@ -41,6 +41,31 @@ const authService = {
     }
   },
 
+  // Register new admin
+  registerAdmin: async (adminData) => {
+    try {
+      const response = await apiClient.post('/auth/register-admin', adminData);
+      const { token, user, message } = response.data;
+      
+      if (token) {
+        localStorage.setItem('authToken', token);
+      }
+      
+      return { 
+        success: true, 
+        user,
+        token,
+        message 
+      };
+    } catch (error) {
+      const errorMessage = error.response?.data?.error || error.message || 'Admin registration failed';
+      return { 
+        success: false, 
+        error: errorMessage
+      };
+    }
+  },
+
   // Logout user
   logout: () => {
     localStorage.removeItem('authToken');
