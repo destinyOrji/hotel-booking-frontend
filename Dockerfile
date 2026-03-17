@@ -19,13 +19,13 @@ FROM node:20-alpine AS runner
 WORKDIR /app
 
 ENV NODE_ENV=production
-ENV PORT=3003
+ENV PORT=3004
 ENV HOST=0.0.0.0
 
 RUN npm install -g serve
 
 COPY --from=builder /app/dist ./dist
 
-EXPOSE 3003
+EXPOSE 3004
 
-CMD ["serve", "-s", "dist", "-l", "3003"]
+CMD ["serve", "-s", "dist", "-l", "3004"]
