@@ -7,19 +7,19 @@ const AuthLayout = ({ children, title, subtitle }) => {
 
   const heroImages = [
     {
-      url: '/images/hero/hotel-exterior-1.jpg',
+      url: '/images/hero/hotel-exterior-2.jpg',
       title: 'Luxury Redefined',
       description: 'Experience world-class hospitality'
     },
     {
-      url: '/images/hero/hotel-exterior-2.jpg',
+      url: '/images/hero/hotel-exterior-3.jpg',
       title: 'Comfort Perfected',
       description: 'Where every detail matters'
     },
     {
-      url: '/images/hero/hotel-exterior-3.jpg',
-      title: 'Your Home Away',
-      description: 'Creating memories that last'
+      url: '/images/hero/hotel-pool.jpg',
+      title: 'Unwind in Style',
+      description: 'Relaxation at its finest'
     }
   ]
 

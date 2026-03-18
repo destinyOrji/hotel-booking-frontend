@@ -11,16 +11,16 @@ const Home = () => {
 
   const heroImages = [
     {
-      url: '/images/hero/hotel-exterior-1.jpg',
-      alt: 'Hotel exterior with modern architecture'
-    },
-    {
       url: '/images/hero/hotel-exterior-2.jpg',
       alt: 'Hotel front entrance with parking'
     },
     {
       url: '/images/hero/hotel-exterior-3.jpg',
       alt: 'Hotel side view with rooms'
+    },
+    {
+      url: '/images/hero/hotel-pool.jpg',
+      alt: 'Hotel outdoor pool area'
     }
   ]
 
