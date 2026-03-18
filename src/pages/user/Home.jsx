@@ -21,10 +21,6 @@ const Home = () => {
     {
       url: '/images/hero/hotel-exterior-3.jpg',
       alt: 'Hotel side view with rooms'
-    },
-    {
-      url: '/images/hero/hotel-pool.jpg',
-      alt: 'Hotel outdoor dining area with pool'
     }
   ]
 

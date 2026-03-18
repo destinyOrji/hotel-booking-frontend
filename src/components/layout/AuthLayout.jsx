@@ -20,11 +20,6 @@ const AuthLayout = ({ children, title, subtitle }) => {
       url: '/images/hero/hotel-exterior-3.jpg',
       title: 'Your Home Away',
       description: 'Creating memories that last'
-    },
-    {
-      url: '/images/hero/hotel-pool.jpg',
-      title: 'Unwind in Style',
-      description: 'Relaxation at its finest'
     }
   ]
 
